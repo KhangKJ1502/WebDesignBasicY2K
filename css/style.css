@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth font-family: Arial, sans-serif;
+    ;
+
+}
+
+
+.header {
+    width: 100%;
+    background-color: aqua;
+    height: 200px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+
+.header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.search-container {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.contact,
+.contact-1 {
+    display: flex;
+    align-items: center;
+}
+
+.contact p,
+.contact-1 p {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.contact p span,
+.contact-1 p span {
+    margin-right: 5px;
+}
+
+.header-2 {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.header-2 nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header-2 nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
+.header-2 nav ul li:hover {
+    background-color: rgba(240, 248, 255, 0.5);
+}
+
+.header-2 nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.banner {
+    margin-top: 250px;
+    /* Adjust this value based on your header height */
+}
+
+.photobanner {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.photobanner img {
+    height: 233px;
+    margin: 0 5px;
+}
+
+
+
+/* Banner */
+.banner {
+    width: 100%;
+    overflow: hidden;
+    margin: 1px auto;
+    background: white;
+}
+
+.banner img {
+    width: 15%;
+    height: 100%;
+}
+
+.photobanner {
+    margin-top: 200px;
+    height: 300px;
+    width: 3550px;
+}
+
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+    -ms-animation: bannermove 30s linear infinite;
+    -o-animation: bannermove 30s linear infinite;
+    animation: bannermove 20s linear infinite;
+}
+
+@keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-moz-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-webkit-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-ms-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-o-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+/* main */
+
+#InCountry {
+    color: black;
+}
+
+#OutCountry {
+    color: black;
+}
+
+.content {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+h3 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+main {
+    background-color: #ccc;
+}
+
+.split {
+    width: 100%;
+    height: 1px;
+    background-color: #0056b3;
+}
+
+.content-1 {
+    position: relative;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 40%;
+    margin: 40px auto 10px;
+    font-family: Arial, sans-serif;
+}
+
+.content-1 img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-1 h4 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-align: center;
+    color: #333;
+}
+
+.content-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px 20px 20px;
+}
+
+.content-1 li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.content-1 li::before {
+    content: "✔";
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.button-setting {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.content-1 button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 30%;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.buttonIncontry {
+    padding: 10px;
+    font-size: 1rem;
+    width: 10%;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.content-1 button:hover {
+    background-color: #FF8C00;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Pagination-2 */
+.pagination-1 {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.pagination-1 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination-1 a.active-1 {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination-1 a:hover:not(.active-1) {
+    background-color: #ddd;
+}
+
+.hidden-2 {
+    display: none;
+}
+
+/* Khách Sạn */
+#KhachSan {
+    color: black;
+}
+
+.KhachSan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imgks {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imgks img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.imgks:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imgks img:hover {
+    filter: brightness(110%) contrast(120%);
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    background-color: rgba(40, 169, 216, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*form*/
+#LienHe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+}
+
+.contact-form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#formStatus {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/* footer */
+.footer {
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.footer p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+/* Tablet */
+@media only screen and (max-width: 760px) {
+    main {
+        background-color: rgb(208, 202, 214);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Đảm bảo các phần tử sẽ xuống dòng nếu không đủ chỗ */
+    }
+
+    .content-1,
+    .content-2 {
+        width: 45%;
+        /* Mỗi phần tử chiếm 50% chiều rộng, tạo thành 2 cột */
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 420px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+    .header-1 img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .header-2 {
+        height: 70px;
+        font-size: 70%;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        margin: 10px 10px;
+    }
+
+    .content-1,
+    .content-2 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+    }
+
+    .search-container button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .buttonIncontry {
+        width: 90%;
+    }
+
+    .pagination,
+    .pagination-1 {
+        flex-direction: column;
+    }
+
+    .pagination a,
+    .pagination-1 a {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+    }
+}
